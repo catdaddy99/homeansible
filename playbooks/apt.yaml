@@ -1,4 +1,4 @@
-hosts: "10.77.2.19"
+hosts: "jenkins"
 become: yes
 tasks:
   - name: apt
