@@ -7,6 +7,9 @@
 [jenkins]
 10.77.2.19
 
+[ubuntutest]
+10.77.2.185
+
 
 [noauth]
 10.77.2.16
