@@ -1,4 +1,4 @@
-hosts: "*"
+hosts: "10.77.2.19"
 become: yes
 tasks:
   - name: apt
