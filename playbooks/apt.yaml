@@ -7,6 +7,6 @@
         state: present  
     - name: apt
       apt:
-        update_cache: yes
+#        update_cache: yes
         upgrade: 'yes'  
   
