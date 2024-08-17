@@ -1,3 +1,11 @@
  
 ansible-playbook ./playbooks/apt.yml -m ping --user root --ask-pass -i /root/ansible/homeansible/inventory/hosts jenkins
+git pull https://github.com/catdaddy99/homeansible  
 
+
+
+Not using BASH
+
+Try linux command chsh.
+
+The detailed command is chsh -s /bin/bash. It will prompt you to enter your password. Your default login shell is /bin/bash now. You must log out and log back in to see this change.
