@@ -1,4 +1,4 @@
-- hosts: "ubuntutest"
+- hosts: "jenkins"
   become: yes
   tasks:
     - name: apt
