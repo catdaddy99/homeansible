@@ -1,7 +1,8 @@
  
 ansible-playbook ./playbooks/apt.yml -m ping --user root --ask-pass -i /root/ansible/homeansible/inventory/hosts jenkins
 
-ansible -i /root/ansible/homeansible/inventory/hosts linuxservers -m ping --user root --ask-pass
+ansible -i ./inventory/hosts linuxservers -m ping --user root --ask-pass
+
 
 
 
