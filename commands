@@ -1,8 +1,12 @@
  
 ansible-playbook ./playbooks/apt.yml -m ping --user root --ask-pass -i /root/ansible/homeansible/inventory/hosts jenkins
-git pull https://github.com/catdaddy99/homeansible  
+
+ansible -i ./inventory/hosts linuxservers -m ping --user root --ask-pass
 
 
+
+
+For Debain: sudo apt install bash-completion
 
 Not using BASH
 
