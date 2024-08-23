@@ -19,13 +19,13 @@
       apt:
         autoremove: yes    
 
-    - name: Update pi
-      serial: 1
-      roles:
-        - stop_keepalived
-        - updates
-        - pihole
-        - start_keepalived    
+#    - name: Update pi
+#      serial: 1
+#      roles:
+#        - stop_keepalived
+#        - updates
+#        - pihole
+#        - start_keepalived    
 
   #  - name: Add an Apt signing key, uses whichever key is at the URL
   #    ansible.builtin.apt_key:
