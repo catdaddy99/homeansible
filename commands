@@ -4,6 +4,8 @@ ansible-playbook --user tfuser -i /home/tfuser/ansible/homeansible/inventory/hos
 
 ansible -i ./inventory/hosts linuxservers -m ping --user root --ask-pass
 
+ansible -i ./inventory/hosts pihole -m ping --user tfuser
+
 
 
 
