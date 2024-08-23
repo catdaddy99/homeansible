@@ -5,6 +5,10 @@
       ansible.builtin.apt:
         name: "*"
         state: latest
+    - name: apt
+      apt:
+#        update_cache: yes       failing with error
+        upgrade: 'yes'     
     - name: Remove useless packages from the cache
       ansible.builtin.apt:
         autoclean: yes
