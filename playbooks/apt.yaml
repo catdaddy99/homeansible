@@ -5,7 +5,7 @@
       ansible.builtin.apt:
         name: "*"
         state: latest
-    - name: apt
+    - name: apt upgrade - dist upgrade
       apt:
 #        update_cache: yes       failing with error
         upgrade: 'yes'     
