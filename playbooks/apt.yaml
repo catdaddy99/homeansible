@@ -5,7 +5,9 @@
       ansible.builtin.apt:
         name: "*"
         state: latest
-
+    - name: Remove useless packages from the cache
+      ansible.builtin.apt:
+        autoclean: yes
 
   #  - name: Add an Apt signing key, uses whichever key is at the URL
   #    ansible.builtin.apt_key:
