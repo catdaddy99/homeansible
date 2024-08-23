@@ -21,4 +21,6 @@
 
     - name: pihole -up Execute the command in remote shell; stdout goes to the specified file on the remote
       ansible.builtin.shell: piholeup.sh >> ./lastpiholeupdate.txt    
+      args:
+        executable: /bin/bash
  
