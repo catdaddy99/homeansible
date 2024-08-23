@@ -20,5 +20,5 @@
         autoremove: yes    
 
     - name: pihole -up Execute the command in remote shell; stdout goes to the specified file on the remote
-      ansible.builtin.shell: /home/tfuser/ansible/homeansible/piholeup.sh >> ./lastpiholeupdate.txt    
+      ansible.builtin.shell: piholeup.sh >> ./lastpiholeupdate.txt    
  
