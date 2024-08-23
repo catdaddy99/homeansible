@@ -15,6 +15,10 @@
       ansible.builtin.apt:
         autoclean: yes
 
+    - name: Remove dependencies that are no longer required
+      apt:
+        autoremove: yes    
+
   #  - name: Add an Apt signing key, uses whichever key is at the URL
   #    ansible.builtin.apt_key:
   #      url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
