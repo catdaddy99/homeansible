@@ -1,14 +1,16 @@
 - hosts: "pihole"
   become: yes
   tasks:
+
     - name: Update all packages to their latest version
       ansible.builtin.apt:
         name: "*"
         state: latest
+
     - name: apt upgrade - dist upgrade
       apt:
-#        update_cache: yes       failing with error
-        upgrade: 'yes'     
+        upgrade: 'yes'
+
     - name: Remove useless packages from the cache
       ansible.builtin.apt:
         autoclean: yes
