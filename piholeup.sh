@@ -1,1 +1,1 @@
-pihiole -up
+pihole -up
