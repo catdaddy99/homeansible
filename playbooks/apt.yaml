@@ -1,4 +1,4 @@
-- hosts: "pihole"
+- hosts: "postfix"
   become: yes
   tasks:
 

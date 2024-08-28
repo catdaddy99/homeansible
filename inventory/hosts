@@ -19,3 +19,7 @@
 
 [pihole]
 10.77.2.10
+
+[postfix]
+postfixtest1 = 10.77.2.88
+postfixtest2 = 10.77.2.89
