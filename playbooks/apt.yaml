@@ -20,35 +20,6 @@
         autoremove: yes    
 
 
-    - name: Install Postfix
-      tasks:
-        - name: Update package cache
-          apt:
-            update_cache: yes
-
-        - name: Install Postfix
-          apt:
-            name: postfix
-            state: present
-
-        - name: Configure Postfix
-          debconf:
-            name: postfix
-            question: "postfix/main_mailer_type"
-            value: "Internet Site"
-            vtype: "string"
-            state: "present"
-          with_items:
-            - example.com
-          notify: Restart Postfix
-
-      handlers:
-        - name: Restart Postfix
-          service:
-            name: postfix
-            state: restarted
-
-
 
 
 #    - name: pihole -up Execute the command in remote shell; stdout goes to the specified file on the remote
