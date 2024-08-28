@@ -2,7 +2,7 @@
 
 ---
 - name: Install Postfix
-  hosts: your_target_server
+  hosts: postfix
   become: yes
 
   tasks:
